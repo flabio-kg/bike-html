@@ -28,7 +28,6 @@
   font-style: normal;
 }
 
-<<<<<<< 2aef38bdbe5b84c6e310d3d1667c796bf6407e2d
 @font-face {
   font-family: 'ProximaNovaLight';
   src: url('../fonts/ProximaNovaLight/ProximaNova-Light.eot'),
@@ -49,8 +48,7 @@
   font-style: italic;
 }
 
-=======
->>>>>>> dcd8e3c0ea6b0216ea93c88110cc5b1ecdcea5b9
+
 @keyframes cssload-animBefore {
   0% {
     transform: scale(1) translateY(-200%);
@@ -432,7 +430,6 @@ body{
 .sale{
 	padding-top: 50px;
 	display: block;
-<<<<<<< 2aef38bdbe5b84c6e310d3d1667c796bf6407e2d
   margin-right: -15px;
   max-width: 100%;
   height: 150px;
@@ -448,10 +445,10 @@ body{
   &:before{
    content: '';
    position: absolute;
-   width: 0; 
+   width: 0;
    height: 0;
    border-top: 60px solid transparent;
-   border-bottom: 60px solid transparent;  
+   border-bottom: 60px solid transparent;
    border-right: 60px solid #FF0253;
    transform: rotate(45deg);
    left: -8px;
@@ -470,7 +467,6 @@ body{
     width: 317px;
     display: inline-block;
     padding-top: 13px;
-=======
 	&__stock{
 		margin-right: -15px;
 		max-width: 100%;
@@ -502,7 +498,6 @@ body{
 			left: 5px;
 			top: 20px;
 		}
->>>>>>> dcd8e3c0ea6b0216ea93c88110cc5b1ecdcea5b9
 		.sub-title{
 			font-size: 38px;
 			text-transform: uppercase;
@@ -573,4 +568,5 @@ body{
 			}
 		}
 	}
+}
 }
