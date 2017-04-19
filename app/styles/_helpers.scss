@@ -1,4 +1,52 @@
+@font-face {
+  font-family: 'ProximaNovablackIt';
+  src: url('../fonts/ProximaNovablackIt/ProximaNova-BlackIt.eot'),
+  url('../fonts/ProximaNovablackIt/ProximaNova-BlackIt.woff') format('woff'),
+  url('../fonts/ProximaNovablackIt/ProximaNova-BlackIt.ttf') format('truetype'),
+  url('../fonts/ProximaNovablackIt/ProximaNova-BlackIt.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: italic;
+}
 
+@font-face {
+  font-family: 'ProximaNovaBoldIt';
+  src: url('../fonts/ProximaNovaBoldIt/ProximaNova-BoldIt.eot'),
+  url('../fonts/ProximaNovaBoldIt/ProximaNova-BoldIt.woff') format('woff'),
+  url('../fonts/ProximaNovaBoldIt/ProximaNova-BoldIt.ttf') format('truetype'),
+  url('../fonts/ProximaNovaBoldIt/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../fonts/ProximaNovaBold/ProximaNovaBold.eot'),
+  url('../fonts/ProximaNovaBold/ProximaNovaBold.woff') format('woff'),
+  url('../fonts/ProximaNovaBold/ProximaNovaBold.ttf') format('truetype'),
+  url('../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('../fonts/ProximaNovaLight/ProximaNova-Light.eot'),
+  url('../fonts/ProximaNovaLight/ProximaNova-Light.woff') format('woff'),
+  url('../fonts/ProximaNovaLight/ProximaNova-Light.ttf') format('truetype'),
+  url('../fonts/ProximaNovaLight/ProximaNova-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaLightIt';
+  src: url('../fonts/ProximaNovaLightIt/ProximaNova-LightIt.eot'),
+  url('../fonts/ProximaNovaLightIt/ProximaNova-LightIt.woff') format('woff'),
+  url('../fonts/ProximaNovaLightIt/ProximaNova-LightIt.ttf') format('truetype'),
+  url('../fonts/ProximaNovaLightIt/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype');
+  font-weight: 200;
+  font-style: italic;
+}
 
 @keyframes cssload-animBefore {
   0% {
@@ -364,7 +412,7 @@
 
 
 body{
-	background-color: #ddd;
+	background-color: #fff;
 }
 
 .-title{
@@ -381,42 +429,51 @@ body{
 .sale{
 	padding-top: 50px;
 	display: block;
-	&__stock{
-		margin-right: -15px;
-		max-width: 100%;
-		height: 150px;
-		background-color: #F9F9F9;
-		padding-top: 33px;
-		padding-bottom: 33px;
-		padding-left: 65px;
-		padding-right: 60px;
-		transform: skew(-10deg);
-		border-radius: 3px;
-		position: relative;
-		&:before{
-			content: '';
-			position: absolute;
-			width: 0; 
-			height: 0;
-			border-top: 60px solid transparent;
-			border-bottom: 60px solid transparent;  
-			border-right: 60px solid #FF0253;
-			transform: rotate(45deg);
-			left: -8px;
-			top: -38px;
-		}
-		.-triangle{
-			position: absolute;
-			transform: rotate(315deg);
-			color: #fff;
-			left: 5px;
-			top: 20px;
-		}
+  margin-right: -15px;
+  max-width: 100%;
+  height: 150px;
+  background-color: #F9F9F9;
+  padding-top: 20px;
+  padding-bottom: 33px;
+  padding-left: 65px;
+  padding-right: 25px;
+  transform: skew(-10deg);
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+  &:before{
+   content: '';
+   position: absolute;
+   width: 0; 
+   height: 0;
+   border-top: 60px solid transparent;
+   border-bottom: 60px solid transparent;  
+   border-right: 60px solid #FF0253;
+   transform: rotate(45deg);
+   left: -8px;
+   top: -38px;
+ }
+ .-triangle{
+   position: absolute;
+   transform: rotate(315deg);
+   color: #fff;
+   left: -45px;
+   top: -15px;
+   font-weight: 400;
+   font-style: italic;
+ }
+  &__stock{
+    width: 317px;
+    display: inline-block;
+    padding-top: 13px;
 		.sub-title{
-			font-size: 30px;
+			font-size: 38px;
 			text-transform: uppercase;
 			color: #000;
+      font-weight: 600;
+      font-style: italic;
 			margin: 0;
+      transform: skew(10deg);
 			text-align: left;
 			box-shadow: 0 2px 1px -1px #7A7A7A;
 			@media (max-width: $screen-sm-max) {
@@ -425,27 +482,27 @@ body{
 		}
 	}
 	&__discount{
-		margin-left: -30px;
-		max-width: 100%;
-		height: 150px;
-		background-color: #ccc;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		padding-left: 30px;
-		transform: skew(-10deg);
-		border-radius: 3px;
+    padding-left: 35px;
 		.title-sub{
 			margin: 0;
 			color: #000;
 			text-transform: uppercase;
+      transform: skew(10deg);
 			padding-bottom: 20px;
+      font-weight: 600;
+      font-style: italic;
 			span{
 				color: #FF0253;
 			}
 		}
 		.sub{
 			padding-top: 5px;
+      transform: skew(10deg);
 			margin: 0;
+      font-size: 14px;
+      color: #a8a8a8;
+      font-weight: 200;
+      font-style: italic;
 		}
 		.-forms{
 			transform: skew(10deg);
