@@ -1,9 +1,9 @@
-.photo-gallery{
+.gallery{
   text-align: center;
-  padding-top: 80px;
-  .-title{
-    margin-bottom: 50px;
-    font-size: 36px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__owl-wrap{
+    padding-top: 50px;
   }
   &--item{
    img{

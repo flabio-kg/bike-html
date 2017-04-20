@@ -1,9 +1,9 @@
-._video{
+.videos{
   text-align: center;
-  .-title{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    font-size: 36px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &__blog{
+    padding-top: 50px;
   }
   &__owl-wrap{
     position: relative;
@@ -43,7 +43,6 @@
         &:after{
          opacity: .4;
          content: '';
-         // background-color: #000;
        }
      }
      @media (max-width: $screen-md-min){

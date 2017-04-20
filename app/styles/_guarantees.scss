@@ -9,6 +9,10 @@
 		padding-top: 30px;
 		padding-left: 85px;
 		padding-right: 85px;
+		@media (max-width: $screen-sm-max) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 		p{
 			text-align: left;
 			font-size: 18px;

@@ -87,7 +87,7 @@ $(document).ready(function() {
 					balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
 				}, {
 					iconLayout: 'default#image',
-					iconImageHref: 'images/marker.png',
+					// iconImageHref: 'images/marker.png',
 					iconImageSize: [35, 55]
 				});
 				myMap.geoObjects.add(myPlacemark);
@@ -161,22 +161,33 @@ $(document).ready(function() {
    center: true,
    animateIn: 'fadeIn',
    animateOut: 'slideOutDown',
-   navText:['<i class="fa fa-long-arrow-left"></i>','<i class="fa fa-long-arrow-right"></i>'],
+   navText:['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
 
  });
 
   $('.third').owlCarousel({
    items: 2,
-   margin: 25,
+   margin: 0,
+   loop: true,
    dots: true,
    nav: true,
-   navText:['<i class="fa fa-long-arrow-left"></i>','<i class="fa fa-long-arrow-right"></i>'],
+   navText:['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
+   responsive:{
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+      margin: 15
+    },
 
+  }
  });
 
+  $(".click").click(function() {
+    $(".one").toggleClass('active');
+});
 
-
-
-  $("#tab li:eq(0) a").tab('show');
+  // $("#tab li:eq(0) a").tab('show');
 
 });
