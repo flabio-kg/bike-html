@@ -8,7 +8,8 @@
     "font-awesome": "^4.7.0",
     "magnific-popup": "^1.1.0",
     "jQuery.mmenu": "mmenu#^6.0.2",
-    "jquery.maskedinput": "^1.4.1"
+    "jquery.maskedinput": "^1.4.1",
+    "animate.css": "animation.css#^3.5.2"
   },
   "overrides": {
     "bootstrap-sass": {
