@@ -1,0 +1,99 @@
+.contactmap{
+	padding-top: 50px;
+	text-align: center;
+	.-title{
+		margin-bottom: 16px;
+	}
+	&__yandex {
+		position: relative;
+		width: 100%;
+		min-height: 550px;
+		margin-top: 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@media (max-width: $screen-xs-max) {
+			padding-bottom: 0;
+			margin-top: 0px;
+		}
+		#map{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			bottom: 0px;
+			@media (max-width: $screen-xs-max) {
+				position: relative;
+				height: 300px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&__blog{
+		margin-top: 30px;
+		background-color: #fff;
+		width: 100%;
+		min-height: 430px;
+		box-shadow: 0px 3px 32.83px 16.17px rgba(0, 0, 0, 0.17);
+	}
+	&__address{
+		text-align: center;
+		h4{
+			padding-top: 45px;
+			font-size: 24px;
+			color: #000;
+			font-family: 'ProximaNovaBoldIt';
+			margin: 0;
+			text-transform: uppercase;
+		}
+		p{
+			padding-top: 25px;
+			font-size: 18px;
+			color: #000;
+			font-family: 'ProximaNovaLight';
+			margin: 0;
+		}
+	}
+	&__forms{
+		position: relative;
+		padding-top: 25px;
+		padding-bottom: 50px;
+		padding-left: 95px;
+		padding-right: 95px;
+		@media (max-width: $screen-xs-min) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		input{
+			width: 100%;
+			height: 48px;
+			border: 1px #DADADA solid;
+			border-radius: 3px;
+			outline: none;
+			padding-left: 55px;
+			font-family: 'ProximaNovaLight';
+		}
+		i{
+			font-size: 20px;
+			position: absolute;
+			left: 107px;
+			top: 35px;
+			@media (max-width: $screen-xs-min) {
+				left: 27px;
+			}
+		}
+		.-btn{
+			background-color: #FFF54C;
+			border-radius: 3px;
+			border: none;
+			outline: none;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			font-size: 14px;
+			color: #000;
+			width: 100%;
+			font-family: 'ProximaNovaBold';
+			text-transform: uppercase;
+			margin-top: 10px;			
+		}
+	}
+}

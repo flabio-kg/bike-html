@@ -1,0 +1,19 @@
+.bikes{
+	background-image: url('../images/delivery.png');
+	background-position: top center;
+	background-size: cover;
+	height: 715px;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		background-color: #000;
+		width: 100%;
+		height: 100%;
+		opacity: .50;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+}
