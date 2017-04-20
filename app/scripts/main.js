@@ -121,5 +121,62 @@ $(document).ready(function() {
 			};
 		};
 	}
-	
+
+  $('.first').owlCarousel({
+   items: 1,
+   loop:true,
+   video:true,
+   lazyLoad:true,
+   videoWidth: 700,
+   videoHeight: 424,
+   dots: false,
+   pullDrag: true,
+   autoWidth: true,
+   center: true,
+   mouseDrag: false,
+   animateIn: 'flipInX',
+   animateOut: 'slideOutDown',
+   dotsContainer: '._video__thumbnail',
+   responsive:{
+    0: {
+      items: 1,
+      videoWidth: 300,
+      videoHeight: 200,
+    },
+    768: {
+      items: 1,
+      videoWidth: 700,
+      videoHeight: 424,
+    },
+
+  }
+});
+
+  $('.second').owlCarousel({
+   items: 1,
+   loop:true,
+   lazyLoad:true,
+   dots: true,
+   nav: true,
+   center: true,
+   animateIn: 'fadeIn',
+   animateOut: 'slideOutDown',
+   navText:['<i class="fa fa-long-arrow-left"></i>','<i class="fa fa-long-arrow-right"></i>'],
+
+ });
+
+  $('.third').owlCarousel({
+   items: 2,
+   margin: 25,
+   dots: true,
+   nav: true,
+   navText:['<i class="fa fa-long-arrow-left"></i>','<i class="fa fa-long-arrow-right"></i>'],
+
+ });
+
+
+
+
+  $("#tab li:eq(0) a").tab('show');
+
 });
