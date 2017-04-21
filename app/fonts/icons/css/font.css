@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'font';
-  src: url('../font/font.eot?76083480');
-  src: url('../font/font.eot?76083480#iefix') format('embedded-opentype'),
-       url('../font/font.woff2?76083480') format('woff2'),
-       url('../font/font.woff?76083480') format('woff'),
-       url('../font/font.ttf?76083480') format('truetype'),
-       url('../font/font.svg?76083480#font') format('svg');
+  src: url('../font/font.eot?65541153');
+  src: url('../font/font.eot?65541153#iefix') format('embedded-opentype'),
+       url('../font/font.woff2?65541153') format('woff2'),
+       url('../font/font.woff?65541153') format('woff'),
+       url('../font/font.ttf?65541153') format('truetype'),
+       url('../font/font.svg?65541153#font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'font';
-    src: url('../font/font.svg?76083480#font') format('svg');
+    src: url('../font/font.svg?65541153#font') format('svg');
   }
 }
 */

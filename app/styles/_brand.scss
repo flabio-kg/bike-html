@@ -20,6 +20,10 @@
     padding-left: 80px;
     padding-right: 80px;
     display: block;
+    @media (max-width: $screen-xs-max){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     &.active{
       display: none;
     }
@@ -99,12 +103,15 @@
     }
   }
   &__item{
-    padding: 70px 70px;
+    padding: 70px;
     max-width: 360px;
     width: 100%;
-    height: 430px;
+    min-height: 350px;
     border: 1px solid #c1c1c1;
     display: inline-block;
+    @media (max-width: $screen-sm-max){
+      padding: 40px;
+    }
     img{
       max-width: 100%;
     }
@@ -112,10 +119,33 @@
       font-size: 24px;
       color: #000;
       margin-bottom: 0;
+      font-family: 'ProximaNovaBoldIt';
     }
     p{
       color: #ed145b;
       font-size: 24px;
+      font-family: 'ProximaNovaBoldIt';
+    }
+    .-btn{
+      color: #fff;
+      line-height: 50px;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      text-transform: uppercase;
+      font-family: 'ProximaNovaBold';
+      margin-top: 10px;
+      &:before{
+        content: '';
+        background-color: #0287E1;
+        position: absolute;
+        border-radius: 3px;
+        max-width: 100%;
+        height: 50px;
+        z-index: -1;
+        left: 0;
+        right: 0;
+      }     
     }
   }
 }
