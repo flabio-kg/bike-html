@@ -184,8 +184,8 @@ $(document).ready(function() {
   }
  });
 
-  $(".click").click(function() {
-    $(".one").toggleClass('active');
+  $('.click').click(function() {
+    $('.one').toggleClass('active');
 });
 
   // $("#tab li:eq(0) a").tab('show');
