@@ -3,11 +3,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   &__content{
-    padding-bottom: 100px;
     position: relative;
-    @media (max-width: $screen-sm-max){
-      padding-bottom: 0;
-    }
   }
   &__pane{
     display: inline-block;
@@ -86,7 +82,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: 20px;
+      left: 10px;
       font-size: 35px;
       color: #2590e3;
     }

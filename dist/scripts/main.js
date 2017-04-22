@@ -2,9 +2,13 @@
 
 $(document).ready(function () {
 
-	$(document).ready(function () {
-		$('.js-phone').mask('+7 (999) 999-99-99');
-	});
+	window.onload = function () {
+		$('.preloader').fadeOut('slow', function () {
+			$(this).remove();
+		});
+	};
+
+	$('.js-phone').mask('+7 (999) 999-99-99');
 
 	$('.popup-link').magnificPopup({
 		type: 'inline',
@@ -40,35 +44,6 @@ $(document).ready(function () {
 	});
 
 	if (Modernizr.mq('(max-width: 767px)')) {
-		$('a.-pagescroll[href*="#"]:not([href="#"])').click(function () {
-			API.close();
-			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				if (target.length) {
-					$('html, body').animate({
-						scrollTop: target.offset().top - 115
-					}, 1000);
-					return true;
-				}
-			}
-		});
-	} else {
-		$('a.-pagescroll[href*="#"]:not([href="#"])').click(function () {
-			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				if (target.length) {
-					$('html, body').animate({
-						scrollTop: target.offset().top - 73
-					}, 1000);
-					return true;
-				}
-			}
-		});
-	}
-
-	if (Modernizr.mq('(max-width: 767px)')) {
 		var init = function init(data) {
 			$('#map').html('');
 			myMap = new ymaps.Map('map', {
@@ -82,16 +57,25 @@ $(document).ready(function () {
 				myPlacemark = new ymaps.Placemark([53.714280, 91.422524], {
 					balloonContentHeader: 'Freeway-bike.ru',
 					balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
-				}, {
-					// iconLayout: 'default#image',
-					// iconImageHref: 'images/marker.png',
-					// iconImageSize: [35, 55]
 				});
 				myMap.geoObjects.add(myPlacemark);
 				return true;
 			};
 		};
 
+		$('a.-pagescroll[href*="#"]:not([href="#"])').click(function () {
+			API.close();
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top - 115
+					}, 1000);
+					return true;
+				}
+			}
+		});
 		var myMap, myPlacemark;
 
 		ymaps.ready(init);
@@ -110,46 +94,29 @@ $(document).ready(function () {
 				myPlacemark = new ymaps.Placemark([53.714380, 91.422524], {
 					balloonContentHeader: 'Freeway-bike.ru',
 					balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
-				}, {
-					// iconLayout: 'default#image',
-					// iconImageHref: 'images/marker.png',
-					// iconImageSize: [35, 55]
 				});
 				myMap.geoObjects.add(myPlacemark);
 				return true;
 			};
 		};
 
+		$('a.-pagescroll[href*="#"]:not([href="#"])').click(function () {
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top - 73
+					}, 1000);
+					return true;
+				}
+			}
+		});
 		var myMap, myPlacemark;
 
 		ymaps.ready(_init);
 		;
 	}
-	// var myMap, myPlacemark;
-
-	// ymaps.ready(init);
-	// function init(data) {
-	// 	$('#map').html('');
-	// 	myMap = new ymaps.Map('map', {
-	// 		controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
-	// 		center: [53.714580,91.420524],
-	// 		behaviors: ['drag'],
-	// 		zoom: 17
-	// 	});
-
-	// 	if (!data.type) {
-	// 		myPlacemark = new ymaps.Placemark([53.714380,91.422524], {
-	// 			balloonContentHeader: 'Freeway-bike.ru',
-	// 			balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
-	// 		}, {
-	// 			// iconLayout: 'default#image',
-	// 			// iconImageHref: 'images/marker.png',
-	// 			// iconImageSize: [35, 55]
-	// 		});
-	// 		myMap.geoObjects.add(myPlacemark);
-	// 		return true;
-	// 	};
-	// };
 
 	$('.first').owlCarousel({
 		items: 1,
