@@ -3,9 +3,11 @@
   padding-top: 50px;
   padding-bottom: 50px;
   &__content{
-    padding-top: 50px;
     padding-bottom: 100px;
     position: relative;
+    @media (max-width: $screen-sm-max){
+      padding-bottom: 0;
+    }
   }
   &__pane{
     display: inline-block;
@@ -19,17 +21,12 @@
   &__blog{
     padding-left: 80px;
     padding-right: 80px;
-    display: block;
+    display: none;
+    margin-top: 50px;
     @media (max-width: $screen-xs-max){
       padding-left: 15px;
       padding-right: 15px;
     }
-    &.active{
-      display: none;
-    }
-  }
-  .tvo{
-    display: none;
     &.active{
       display: block;
     }
@@ -52,7 +49,7 @@
           border-radius: 5px 0 0 5px;
         }
         &:last-child{
-          border-radius: 0 10px 10px 0;
+          border-radius: 0 5px 5px 0;
           margin-left: -5px;
         }
         a{

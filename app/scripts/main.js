@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+	$(document).ready(function(){
+		$('.js-phone').mask('+7 (999) 999-99-99');
+	});
+
 	$('.popup-link').magnificPopup({
 		type:'inline',
 		midClick: true
@@ -16,7 +20,6 @@ $(document).ready(function() {
 		'fx-listitems-slide',
 		'border-full',
 		'pagedim-black'
-
 		],
 		offCanvas: {
 			'position': 'right'
@@ -39,7 +42,7 @@ $(document).ready(function() {
 		$('.js-navtrigger').toggleClass('-active');
 	});
 
-  if (Modernizr.mq('(max-width: 992px)')) {
+  if (Modernizr.mq('(max-width: 767px)')) {
 		$('a.-pagescroll[href*="#"]:not([href="#"])').click(function() {
 			API.close();
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -49,7 +52,7 @@ $(document).ready(function() {
         $('html, body').animate({
           scrollTop: target.offset().top-115
         }, 1000);
-        return false;
+        return true;
       }
     }
   });
@@ -62,13 +65,14 @@ $(document).ready(function() {
         $('html, body').animate({
           scrollTop: target.offset().top-73
         }, 1000);
-        return false;
+        return true;
       }
     }
   });
 	}
 
-		if (Modernizr.mq('(max-width: 767px)')) {
+
+	if (Modernizr.mq('(max-width: 767px)')) {
 		var myMap, myPlacemark;
 
 		ymaps.ready(init);
@@ -76,19 +80,19 @@ $(document).ready(function() {
 			$('#map').html('');
 			myMap = new ymaps.Map('map', {
 				controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
-				center: [91.412191,  53.705500],
+				center: [53.714580,91.422524],
 				behaviors: ['drag'],
 				zoom: 17
 			});
 
 			if (!data.type) {
-				myPlacemark = new ymaps.Placemark([91.412191,  53.705500], {
+				myPlacemark = new ymaps.Placemark([53.714280,91.422524], {
 					balloonContentHeader: 'Freeway-bike.ru',
 					balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
 				}, {
-					iconLayout: 'default#image',
+					// iconLayout: 'default#image',
 					// iconImageHref: 'images/marker.png',
-					iconImageSize: [35, 55]
+					// iconImageSize: [35, 55]
 				});
 				myMap.geoObjects.add(myPlacemark);
 				return true;
@@ -102,55 +106,93 @@ $(document).ready(function() {
 			$('#map').html('');
 			myMap = new ymaps.Map('map', {
 				controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
-				center: [91.412191,  53.705500],
+				center: [53.714380,91.420524],
 				behaviors: ['drag'],
 				zoom: 17
 			});
 
 			if (!data.type) {
-				myPlacemark = new ymaps.Placemark([91.412191,  53.705500], {
+				myPlacemark = new ymaps.Placemark([53.714380,91.422524], {
 					balloonContentHeader: 'Freeway-bike.ru',
 					balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
 				}, {
-					iconLayout: 'default#image',
+					// iconLayout: 'default#image',
 					// iconImageHref: 'images/marker.png',
-					iconImageSize: [35, 55]
+					// iconImageSize: [35, 55]
 				});
 				myMap.geoObjects.add(myPlacemark);
 				return true;
 			};
 		};
 	}
+		// var myMap, myPlacemark;
 
-  $('.first').owlCarousel({
-   items: 1,
-   loop:true,
-   video:true,
-   lazyLoad:true,
-   videoWidth: 700,
-   videoHeight: 424,
-   dots: false,
-   pullDrag: true,
-   autoWidth: true,
-   center: true,
-   mouseDrag: false,
-   animateIn: 'flipInX',
-   animateOut: 'slideOutDown',
-   dotsContainer: '._video__thumbnail',
-   responsive:{
-    0: {
-      items: 1,
-      videoWidth: 300,
-      videoHeight: 200,
-    },
-    768: {
-      items: 1,
-      videoWidth: 700,
-      videoHeight: 424,
-    },
+		// ymaps.ready(init);
+		// function init(data) {
+		// 	$('#map').html('');
+		// 	myMap = new ymaps.Map('map', {
+		// 		controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
+		// 		center: [53.714580,91.420524],
+		// 		behaviors: ['drag'],
+		// 		zoom: 17
+		// 	});
 
-  }
-});
+		// 	if (!data.type) {
+		// 		myPlacemark = new ymaps.Placemark([53.714380,91.422524], {
+		// 			balloonContentHeader: 'Freeway-bike.ru',
+		// 			balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
+		// 		}, {
+		// 			// iconLayout: 'default#image',
+		// 			// iconImageHref: 'images/marker.png',
+		// 			// iconImageSize: [35, 55]
+		// 		});
+		// 		myMap.geoObjects.add(myPlacemark);
+		// 		return true;
+		// 	};
+		// };
+
+		$('.first').owlCarousel({
+			items: 1,
+			loop:true,
+			video:true,
+			lazyLoad:true,
+			videoWidth: 700,
+			videoHeight: 424,
+			dots: false,
+			pullDrag: true,
+			autoWidth: true,
+			center: true,
+			mouseDrag: false,
+			animateIn: true,
+			dotsContainer: '.videos__thumbnail',
+			merge: false,
+			responsive:{
+				0: {
+					items: 1,
+					videoWidth: 300,
+					videoHeight: 200,
+					mouseDrag:false,
+				},
+				375: {
+					items: 1,
+					videoWidth: 320,
+					videoHeight: 200,
+					mouseDrag:false,
+				},
+				425: {
+					items: 1,
+					videoWidth: 350,
+					videoHeight: 200,
+					mouseDrag:false,
+				},
+				768: {
+					items: 1,
+					videoWidth: 700,
+					videoHeight: 424,
+				},
+
+			}
+		});
 
   $('.second').owlCarousel({
    items: 1,
@@ -159,8 +201,6 @@ $(document).ready(function() {
    dots: true,
    nav: true,
    center: true,
-   animateIn: 'fadeIn',
-   animateOut: 'slideOutDown',
    navText:['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
 
  });
@@ -184,10 +224,66 @@ $(document).ready(function() {
   }
  });
 
+  $('.forth').owlCarousel({
+  	items: 1,
+  	loop:true,
+  	margin: 0,
+  	nav:true,
+  	center: true,
+  	navText:['<i class=" icon-arrow-left"></i>','<i class=" icon-arrow-right"></i>'],
+  	responsive:{
+  		0:{
+  			items:1
+  		},
+  		600:{
+  			items:1
+  		},
+  		1000:{
+  			items:1
+  		}
+  	}
+  })
+
   $('.click').click(function() {
     $('.one').toggleClass('active');
 });
 
-  // $("#tab li:eq(0) a").tab('show');
+  $('.js-amo').submit(function() {
+  	var th = $(this);
+  	$.ajax({
+  		type: 'POST',
+  		url: 'handler.php',
+  		data: th.serialize()
+  	}).done(function() {
+			$.magnificPopup.open({
+        items: {
+          src: '#submite',
+          type: 'inline'
+        },
+        midClick: true,
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close"></button>'
+      });
+  	});
+  	return false;
+  });
+
+	$(".js-mail").submit(function() {
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: th.serialize()
+		}).done(function() {
+			$.magnificPopup.open({
+        items: {
+          src: '#submite',
+          type: 'inline'
+        },
+        midClick: true,
+        closeMarkup: '<button title="%title%" type="button" class="mfp-close"></button>'
+      });
+		});
+		return false;
+	});
 
 });

@@ -472,6 +472,7 @@ body{
 .sale{
 	display: block;
   max-width: 100%;
+  overflow: hidden;
   height: 150px;
   background-color: #F9F9F9;
   padding-top: 20px;
@@ -483,40 +484,49 @@ body{
   position: relative;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
   &:before{
-   content: '';
-   position: absolute;
-   width: 0;
-   height: 0;
-   border-top: 60px solid transparent;
-   border-bottom: 60px solid transparent;
-   border-right: 60px solid #FF0253;
-   transform: rotate(45deg);
-   left: -8px;
-   top: -38px;
- }
- @media (max-width: $screen-sm-max) {
-  min-height: 320px;
-  text-align: center;
-  transform: skew(0deg);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 15px;
- }
- @media (max-width: $screen-xs-max) {
-   
- }
- .-triangle{
-   position: absolute;
-   transform: rotate(315deg);
-   color: #fff;
-   left: -45px;
-   top: -15px;
-   font-family: 'ProximaNovablackIt';
-   @media (max-width: $screen-sm-max) {
-     top: 0px;
-     left: 0;
-   }
- }
+    content: '';
+    position: absolute;
+    width: 420px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: -4.603px 1.954px 16.56px 1.44px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+    min-height: 320px;
+    text-align: center;
+    transform: skew(0deg);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+  }
+  .-triangle{
+    text-align: center;
+    position: absolute;
+    transform: rotate(-37deg);
+    background-color: rgb(237, 20, 91);
+    box-shadow: -4.603px 1.954px 16.56px 1.44px rgba(136, 18, 56, 0.67);
+    width: 154px;
+    height: 154px;
+    top: -117px;
+    left: -127px;
+    @media (max-width: $screen-sm-max) {
+      top: -117px;
+      left: -87px;
+    }
+    span{
+      color: #fff;
+      font-family: 'ProximaNovablackIt';
+      position: absolute;
+      bottom: 10px;
+      text-transform: uppercase;
+      left: 0;
+      right: 0;
+    } }
   &__stock{
     width: 317px;
     display: inline-block;
@@ -531,9 +541,12 @@ body{
       font-family: 'ProximaNovaBoldIt';
 			color: #000;
 			margin: 0;
-      transform: skew(0deg);
+      transform: skew(10deg);
 			text-align: left;
 			box-shadow: 0 2px 1px -1px #7A7A7A;
+      @media (max-width: $screen-sm-max) {
+        transform: skew(0deg);
+      }
 			@media (max-width: $screen-xs-max) {
         font-size: 25px;
         text-align: center;
@@ -554,8 +567,12 @@ body{
 			text-transform: uppercase;
 			padding-bottom: 10px;
       font-family: 'ProximaNovaBoldIt';
+      transform: skew(10deg);
       font-size: 22px;
       padding-left: 15px;
+      @media (max-width: $screen-sm-max) {
+        transform: skew(0deg);
+      }
       @media (max-width: $screen-xs-max) {
         font-size: 18px;
       }
@@ -565,13 +582,17 @@ body{
 		}
 		.sub{
 			padding-top: 5px;
-      transform: skew(0deg);
 			margin: 0;
       font-size: 14px;
       color: #a8a8a8;
       font-family: 'ProximaNovaLightIt';
       padding-left: 15px;
       padding-bottom: 30px;
+      transform: skew(10deg);
+      text-align: left;
+      @media (max-width: $screen-sm-max) {
+        text-align: center;
+      }
       @media (max-width: $screen-xs-max) {
         padding-left: 0;
       }
@@ -590,13 +611,56 @@ body{
 				outline: none;
 				padding-left: 55px;
 				position: relative;
+        display: inline-block;
         font-family: 'ProximaNovaLight';
 			}
 			i{
 				font-size: 20px;
+        line-height: 48px;
 				position: absolute;
-				left: 17px;
-				top: 15px;
+				left: 10px;
+        top: 0;
+        @media (max-width: $screen-sm-max) {
+          left: 120px;
+          right: auto;
+        }
+        @media (max-width: $screen-sm-min) {
+          left: 16%;
+          top: 8px;
+          right: auto;
+        }
+        @media (max-width: 665px) {
+          left: 13%;
+          top: 8px;
+          right: auto;
+        }
+        @media (max-width: 590px) {
+          left: 30px;
+          top: 8px;
+          right: auto;
+        }
+        @media (max-width: 540px) {
+          left: 20%;
+          top: 0;
+        }
+        @media (max-width: 500px) {
+          left: 20%;
+          top: 0;
+        }
+        @media (max-width: $screen-xs-min) {
+          left: 16%;
+          top: 0;
+          right: auto;
+        }
+        @media (max-width: 430px) {
+          left: 15%;
+          top: 0;
+        }
+        @media (max-width: 400px) {
+          left: 5%;
+          top: 0;
+          right: auto;
+        }
 			}
 			.-btn{
 				margin-left: 5px;

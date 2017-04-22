@@ -1,11 +1,15 @@
 .popup{
 	max-width: 1320px;
+	width: 100%;
   position: relative;
 	padding-top: 120px;
 	padding-bottom: 135px;
 	background-color: #fff;
+	border-radius: 5px;
 	margin: 0 auto;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
   h3{
   	font-size: 36px;
   	color: #000;
@@ -50,12 +54,15 @@
   	}
   }
   .mfp-close{
-		margin-right: 20px;
+  	margin-right: 20px;
 		margin-top: 20px;
-		border: 2px #020202 solid;
+		border: 2px #000 solid;
 		border-radius: 10em;
-		color: #020202;
+		width: 45px;
+		height: 45px;
+		color: #000;
 		font-size: 40px;
+		opacity: 100;
   }
   &__forms{
   	position: relative;
@@ -89,5 +96,165 @@
   		width: 100%;
   		max-width: 275px;
   	}
+  }
+  &__block{
+  	border-radius: 5px;
+  	border: 3px #0287E1 solid;
+  	img{
+  		max-width: 100%;
+  		border-radius: 5px;
+  	}
+  }
+  &__block2{
+  	background-color: #0287E1;
+  	border-radius: 5px;
+  	margin-top: 10px;
+  	padding: 15px;
+  	h4{
+  		font-size: 18px;
+  		color: #fff;
+  		font-family: 'ProximaNovaBold';
+  	}
+  	p{
+  		font-size: 16px;
+  		color: #fff;
+  		font-family: 'ProximaNovaLight';
+  	}
+  }
+  &__request{
+  	border: 4px #0287E1 solid;
+  	border-radius: 5px;
+  	padding: 15px;
+  	h6{
+  		font-size: 26px;
+  		color: #000;
+  		font-family: 'ProximaNovaBoldIt';
+  		margin: 0;
+  	}
+  	.top{
+  		margin-top: 30px;
+  		input{
+  			position: relative;
+  		}
+  		i{
+  			left: 60px;
+  		}
+  		textarea{
+  			margin-top: 20px;
+  			max-width: 275px;
+        width: 100%;
+				height: 100px;
+				border: 1px #DADADA solid;
+				border-radius: 3px;
+				outline: none;
+				padding: 15px;
+				position: relative;
+        display: inline-block;
+        font-family: 'ProximaNovaLight';
+  		}
+  		.send{
+  			margin-top: 20px;
+  			padding-left: 15px;
+  		}
+  	}
+  }
+  &__guarant{
+  	img{
+			max-width: 100%;
+			width: 100%;
+		}
+  }
+  &__submit{
+  	border: 4px #0287E1 solid;
+  	border-radius: 5px;
+  	padding: 15px;
+  	h2{
+  		font-size: 50px;
+  		color: #000;
+  		font-family: 'ProximaNovaBold';
+  	}
+  	h4{
+  		font-size: 26px;
+  		color: #000;
+  		font-family: 'ProximaNovaBold';
+  		margin: 0;
+  		margin-bottom: 15px;
+  	}
+  	i{
+  		color: #16A05D;
+  		font-size: 50px;
+  	}
+  }
+}
+.size{
+	padding: 15px;
+	max-width: 545px;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+  position: relative;
+	margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .mfp-close{
+  	margin-right: -40px;
+		margin-top: -40px;
+		border: none;
+		color: #fff;
+		font-size: 40px;
+		opacity: 100;
+		@media (max-width: $screen-sm-min) {
+			margin-right: -10px;
+		}
+  }
+}
+.size1{
+	padding: 15px;
+	max-width: 445px;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+  position: relative;
+	margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .mfp-close{
+  	margin-right: -40px;
+		margin-top: -40px;
+		border: none;
+		color: #fff;
+		font-size: 40px;
+		opacity: 100;
+		@media (max-width: $screen-sm-min) {
+			margin-right: -10px;
+		}
+  }
+}
+.size2{
+	padding: 15px;
+	max-width: 545px;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+  position: relative;
+	margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .mfp-close{
+  	margin-right: -40px;
+		margin-top: -40px;
+		border: none;
+		color: #fff;
+		font-size: 40px;
+		opacity: 100;
+		@media (max-width: $screen-sm-min) {
+			margin-right: -10px;
+		}
   }
 }

@@ -62,17 +62,18 @@
 			outline: none;
 			padding-left: 55px;
 			font-family: 'ProximaNovaLight';
-			position: relative;
+			@media (max-width: $screen-sm-max) {
+				padding-left: 15px;
+			}
 		}
 		i{
 			font-size: 20px;
 			position: absolute;
+			display: block;
 			top: 10px;
 			left: 250px;
 			@media (max-width: $screen-sm-max) {
-			}
-			@media (max-width: $screen-xs-max) {
-				top: 20px;
+				display: none;
 			}
 		}
 		.-btn{

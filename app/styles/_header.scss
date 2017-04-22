@@ -50,8 +50,14 @@
 		padding-top: 25px;
 		text-align: center;
 		position: relative;
+		a{
+			display: block;
+			outline: none;
+		}
 		.-btn{
 			color: #fff;
+			font-family: 'ProximaNovaBold';
+			text-transform: uppercase;
 			line-height: 50px;
 			text-decoration: none;
 			&:before{
@@ -65,7 +71,24 @@
 				z-index: -1;
 				left: 0;
 				right: 0;
-			}			
+			}
+			&:hover{
+				color: #000;
+				transition: all .3s;
+				&:before{
+					content: '';
+					background-color: #fff;
+					border: 2px #0287E1 solid;
+					transform: skew(-10deg);
+					position: absolute;
+					border-radius: 3px;
+					max-width: 100%;
+					height: 50px;
+					z-index: -1;
+					left: 0;
+					right: 0;
+				}
+			}
 		}
 	}
 	&__menu{

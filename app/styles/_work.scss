@@ -1,0 +1,167 @@
+.work{
+  position: relative;
+  text-align: center;
+  background-image: url('../images/how-we-work.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 715px;
+  &:before{
+    position: absolute;
+    background-color: #000;
+    content:'';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .50;
+  }
+  .wrap{
+    padding-top: 70px;
+  }  
+  &__application{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+    @media (max-width: $screen-xs-min){
+      height: 280px;
+    }
+    hr{
+      border: none;
+    }
+    &--iconwrap{
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      padding-bottom: 20px;
+      position: relative;
+      width:150px;
+      height:150px;
+      border-radius: 200px;
+      font-size: 50px;
+      color:#fff;
+      line-height: 150px;
+      border: 2px solid #2d7dbb;
+           .icon-bicycle{
+        margin-left: -30px;
+      }
+    }
+    &--item{
+      padding-top: 20px;
+      padding-bottom: 125px;
+      margin: 0;
+      max-width: 300px;
+      p{
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+        font-family: 'ProximaNovaLight';
+        margin: 0;
+        a{
+          color: #2d7dbb;
+          text-decoration: underline;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+      .-btn{
+        position: absolute;
+        color: #fff;
+        line-height: 50px;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        font-family: 'ProximaNovaBold';
+        margin-top: 10px;
+        background-color: #2d7dbb;
+        border-radius: 5px;
+        @media (max-width: $screen-xs-min){
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  &__blog{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/dote.png');
+      background-position: center center;
+      background-repeat: repeat-x;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      top: 100%;
+      width: 660px;
+      height: 30px;
+      z-index: 999;
+      @media (max-width: $screen-md-max){
+        width: 650px;
+        left: 51.2%;
+        transform: translateX(-51%);
+      }
+      @media (max-width: $screen-sm-max){
+        display: none;
+      }
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/dot_left.png');
+      background-position: center center;
+      background-repeat: repeat-x;
+      width: 5px;
+      height: 30px;
+      left: 150px;
+      bottom: -51px;
+      @media (max-width: $screen-sm-max){
+        display: none;
+      }
+    }
+  }
+  &__block{
+    margin-top: 85px;
+    position: relative;
+    @media (max-width: $screen-sm-max){
+      margin-top: 0;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/dot_left.png');
+      background-position: center center;
+      background-repeat: repeat-x;
+      width: 5px;
+      height: 30px;
+      right: 145px;
+      top: -104px;
+      @media (max-width: $screen-sm-max){
+        display: none;
+      }
+    }
+  }
+  .doted{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/dot.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      right: 0;
+      top: 22%;
+      left: 200px;
+      width: 70px;
+      height: 10px;
+      z-index: 999;
+      @media (max-width: $screen-sm-max){
+        display: none;
+      }
+    }
+  }
+}
