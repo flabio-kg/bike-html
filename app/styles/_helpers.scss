@@ -437,6 +437,7 @@ body{
       width: auto;
     }
 		.sub-title{
+      display: block;
 			font-size: 38px;
 			text-transform: uppercase;
       font-family: 'ProximaNovaBoldIt';
@@ -444,13 +445,53 @@ body{
 			margin: 0;
       transform: skew(10deg);
 			text-align: left;
-			box-shadow: 0 2px 1px -1px #7A7A7A;
+      position: relative;
+			&:before{
+        content: '';
+        position: absolute;
+        box-shadow: 0 2px 1px -1px #7A7A7A;
+        width: 307px;
+        top: 0;
+        bottom: 0;
+        left: -3px;
+      }
+      &:nth-child(2n){
+        &:before{
+          content: '';
+          position: absolute;
+          box-shadow: 0 2px 1px -1px #7A7A7A;
+          width: 276px;
+          top: 0;
+          bottom: 0;
+          left: -3px;
+        }
+      }
       @media (max-width: $screen-sm-max) {
         transform: skew(0deg);
       }
 			@media (max-width: $screen-xs-max) {
         font-size: 25px;
         text-align: center;
+        &:before{
+          content: '';
+          position: absolute;
+          box-shadow: 0 2px 1px -1px #7A7A7A;
+          width: 200px;
+          top: 0;
+          bottom: 0;
+          left: 0;
+        }
+        &:nth-child(2n){
+          &:before{
+            content: '';
+            position: absolute;
+            box-shadow: 0 2px 1px -1px #7A7A7A;
+            width: 176px;
+            top: 0;
+            bottom: 0;
+            left: 10px;
+          }
+        }
 			}
 		}
 	}
