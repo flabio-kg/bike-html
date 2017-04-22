@@ -6,6 +6,7 @@ $(document).ready(function () {
 		$('.preloader').fadeOut('slow', function () {
 			$(this).remove();
 		});
+		$('.-title').show(600);
 	};
 
 	$('.js-phone').mask('+7 (999) 999-99-99');
@@ -70,7 +71,7 @@ $(document).ready(function () {
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 				if (target.length) {
 					$('html, body').animate({
-						scrollTop: target.offset().top - 115
+						scrollTop: target.offset().top
 					}, 1000);
 					return true;
 				}
@@ -106,7 +107,7 @@ $(document).ready(function () {
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 				if (target.length) {
 					$('html, body').animate({
-						scrollTop: target.offset().top - 73
+						scrollTop: target.offset().top
 					}, 1000);
 					return true;
 				}

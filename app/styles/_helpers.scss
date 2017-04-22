@@ -59,13 +59,14 @@
 }
 
 .gearbox {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: 226px;
   height: 136px;
   margin-top: -68px;
   margin-left: -113px;
+  z-index: 9999;
 }
 [class^="gear_"] {
   width: 62px;
