@@ -261,5 +261,11 @@ $(document).ready(function () {
 		});
 		return false;
 	});
+
+	$('.brand__tabs a').click(function () {
+		$(this).parent().siblings().removeClass('active');
+		$(this).parent().addClass('active');
+		$('.brand__visable.-hide').slideToggle();
+	});
 });
 //# sourceMappingURL=main.js.map

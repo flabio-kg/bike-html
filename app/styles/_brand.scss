@@ -17,11 +17,16 @@
       transform: translateX(-50%);
     }
   }
+  &__visable{
+    display: none;
+    &.-active{
+      display: block;
+    }
+  }
   &__blog{
     padding-left: 80px;
     padding-right: 80px;
-    display: none;
-    margin-top: 50px;
+    margin-top: 50px;    
     @media (max-width: $screen-xs-max){
       padding-left: 15px;
       padding-right: 15px;
@@ -100,13 +105,12 @@
   }
   &__item{
     padding: 70px;
-    max-width: 360px;
-    width: 100%;
     min-height: 350px;
     border: 1px solid #c1c1c1;
     display: inline-block;
     @media (max-width: $screen-sm-max){
       padding: 40px;
+      margin-bottom: 30px;
     }
     img{
       max-width: 100%;
