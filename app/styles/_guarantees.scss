@@ -7,6 +7,9 @@
 	}
 	.-title{
 		margin-top: 100px;
+		@media (max-width: $screen-sm-max) {
+			margin-top: 50px;
+		}
 	}
 	&__text{
 		padding-top: 30px;

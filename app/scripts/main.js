@@ -1,10 +1,10 @@
-	window.onload=function(){
-		$('.preloader').fadeOut('slow',
-			function(){
-				$(this).remove()
-			})
-		$('.-title').show(600);
-	};
+	// window.onload=function(){
+	// 	$('.preloader').fadeOut('slow',
+	// 		function(){
+	// 			$(this).remove()
+	// 		})
+	// 	$('.-title').show(600);
+	// };
 $(document).ready(function() {
 
 

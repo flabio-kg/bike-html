@@ -2,6 +2,9 @@
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	@media (max-width: $screen-sm-max) {
+    padding-top: 0;
+  }
 	.sale{
 		margin-top: 60px;
 		@media (max-width: $screen-sm-max) {

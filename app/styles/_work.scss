@@ -25,6 +25,7 @@
     display: inline-block;
     text-align: center;
     height: 300px;
+    margin-bottom: 30px;
     @media (max-width: $screen-xs-min){
       height: 280px;
     }
@@ -50,7 +51,6 @@
     }
     &--item{
       padding-top: 20px;
-      padding-bottom: 125px;
       margin: 0;
       max-width: 300px;
       p{
