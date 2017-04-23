@@ -1,5 +1,3 @@
-$(document).ready(function() {
-
 	window.onload=function(){
 		$('.preloader').fadeOut('slow',
 			function(){
@@ -7,6 +5,8 @@ $(document).ready(function() {
 			})
 		$('.-title').show(600);
 	};
+$(document).ready(function() {
+
 
 	$('.js-phone').mask('+7 (999) 999-99-99');
 	

@@ -1,13 +1,12 @@
 'use strict';
 
+window.onload = function () {
+	$('.preloader').fadeOut('slow', function () {
+		$(this).remove();
+	});
+	$('.-title').show(600);
+};
 $(document).ready(function () {
-
-	window.onload = function () {
-		$('.preloader').fadeOut('slow', function () {
-			$(this).remove();
-		});
-		$('.-title').show(600);
-	};
 
 	$('.js-phone').mask('+7 (999) 999-99-99');
 
