@@ -24,7 +24,6 @@
 		margin-left: 50px;
 		display: inline-block;
 		width: 100px;
-		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		@media (max-width: $screen-sm-max) {
@@ -60,7 +59,6 @@
 		}
 		a{
 			outline: none;
-			overflow: hidden;
 			display: block;
 			width: 100px;
 			height: 100px;
@@ -115,7 +113,6 @@
 	&__item2{
 		display: inline-block;
 		width: 100px;
-		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		&:before{
@@ -203,7 +200,6 @@
 		margin-left: 100px;
 		display: inline-block;
 		width: 100px;
-		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		@media (max-width: $screen-sm-max) {
@@ -293,7 +289,6 @@
 	&__item4{
 		display: inline-block;
 		width: 100px;
-		overflow: hidden;
 		margin-top: 20px;
 		position: absolute;
 		right: -160px;
@@ -387,7 +382,6 @@
 	&__item5{
 		display: inline-block;
 		width: 100px;
-		overflow: hidden;
 		margin-top: 20px;
 		position: absolute;
 		left: -150px;
@@ -483,7 +477,6 @@
 		margin-right: 50px;
 		display: inline-block;
 		width: 100px;
-		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		@media (max-width: $screen-sm-max) {
@@ -573,7 +566,6 @@
 	&__item7{
 		display: inline-block;
 		width: 100px;
-		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		&:before{
@@ -662,7 +654,6 @@
 		margin-right: 100px;
 		display: inline-block;
 		width: 100px;
-		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		@media (max-width: $screen-sm-max) {

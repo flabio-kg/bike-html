@@ -361,6 +361,9 @@ body{
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  @media (max-width: $screen-xs-max) {
+    font-size: 20px;
+  }
   &:before{
     content: '';
     background-color: #2590E3;
@@ -374,10 +377,7 @@ body{
     top: 0;
     bottom: 0;
     right: 0;
-  }
-  @media (max-width: $screen-xs-max) {
-    font-size: 20px;
-  }
+  }  
 }
 
 .sale{

@@ -53,8 +53,9 @@
   			opacity: .6;
   		}
   		@media (max-width: $screen-xs-min){
-  			color: #000;
+  			color: #fff;
   			left: 0;
+        top: 51.8%;
   		}
   	}
   	.owl-next{
@@ -68,8 +69,9 @@
   			opacity: .6;
   		}
   		@media (max-width: $screen-xs-min){
-  			color: #000;
+  			color: #fff;
   			right: 10px;
+        top: 51.8%;
   		}
   	}
   }
@@ -210,7 +212,10 @@
 			padding-left: 0;
       padding-bottom: 10px;
       padding-top: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
 			display: block;
+      margin: 0;
 			li{
 				list-style-type: none;
 				font-size: 18px;

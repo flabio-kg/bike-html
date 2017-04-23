@@ -138,6 +138,9 @@
   		}
   		i{
   			left: 60px;
+        @media (max-width: $screen-xs-min){
+          left: 15px;
+        }
   		}
   		textarea{
   			margin-top: 20px;
