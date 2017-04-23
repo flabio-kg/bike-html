@@ -46,7 +46,7 @@
   		color: #fff;
   		font-size: 25px;
   		position: absolute;
-  		left: 20px;
+  		left: 120px;
   		top: 50%;
   		margin-top: -20px;
   		&:hover{
@@ -61,7 +61,7 @@
   		color: #fff;
   		font-size: 25px;
   		position: absolute;
-  		right: 20px;
+  		right: 120px;
   		top: 50%;
   		margin-top: -20px;
   		&:hover{
@@ -77,12 +77,9 @@
   	text-align: center;
   	display: block;
   	position: absolute;
-  	bottom: -215px;
+  	bottom: 10px;
   	left: 50%;
   	transform: translateX(-50%);
-  	@media (max-width: $screen-xs-min){
-  		bottom: -240px;
-  	}
   	.owl-dot {
   		width: 20px;
   		display: inline-block;
@@ -111,7 +108,13 @@
   		}
   	}
   }
-	&__item{
+  &__item{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+	&__item2{
+    text-align: center;
 		max-width: 363px;
 		width: 100%;
 		height: 286px;
@@ -120,6 +123,7 @@
 		display: inline-block;
 		overflow: hidden;
 		margin-bottom: 30px;
+    vertical-align: top;
     a{
       overflow: hidden;
       position: relative;
@@ -182,8 +186,9 @@
     }
 	}
 	&__adress{
-		display: block;
-		margin: 0 auto;		
+		display: inline-block;
+		margin: 0 auto;
+    vertical-align: top;
 		max-width: 387px;
 		width: 100%;
 		min-height: 146px;

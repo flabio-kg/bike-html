@@ -24,9 +24,7 @@
 		margin-left: 50px;
 		display: inline-block;
 		width: 100px;
-		height: 100px;
-		border-radius: 10em;
-		border: 4px #DADADA solid;
+		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		@media (max-width: $screen-sm-max) {
@@ -67,6 +65,7 @@
 			width: 100px;
 			height: 100px;
 			border-radius: 10em;
+			border: 4px #DADADA solid;
 			&:hover{
 				span{
 					transform: scale(1.1) rotate(5deg);
@@ -93,10 +92,12 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 10em;
+			width: 92px;
+			height: 92px;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			top: 0;
+			display: block;
+			margin: 0 auto;
 			transform: scale(1);
 			transition: all 1s ease-out;
 		}
@@ -104,8 +105,9 @@
 			font-size: 14px;
 			color: #303536;
 			font-family: 'ProximaNovaBold';
+			margin: 0;
 			@media (max-width: $screen-sm-max) {
-				height: 80px;
+				height: 90px;
 				overflow: hidden;
 			}
 		}
@@ -113,9 +115,7 @@
 	&__item2{
 		display: inline-block;
 		width: 100px;
-		height: 100px;
-		border-radius: 10em;
-		border: 4px #DADADA solid;
+		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		&:before{
@@ -153,6 +153,7 @@
 			width: 100px;
 			height: 100px;
 			border-radius: 10em;
+			border: 4px #DADADA solid;
 			&:hover{
 				span{
 					transform: scale(1.1) rotate(5deg);
@@ -179,10 +180,12 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 10em;
+			width: 92px;
+			height: 92px;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			top: 0;
+			display: block;
+			margin: 0 auto;
 			transform: scale(1);
 			transition: all 1s ease-out;
 		}
@@ -191,7 +194,7 @@
 			color: #303536;
 			font-family: 'ProximaNovaBold';
 			@media (max-width: $screen-sm-max) {
-				height: 80px;
+				height: 90px;
 				overflow: hidden;
 			}
 		}
@@ -200,9 +203,7 @@
 		margin-left: 100px;
 		display: inline-block;
 		width: 100px;
-		height: 100px;
-		border-radius: 10em;
-		border: 4px #DADADA solid;
+		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		@media (max-width: $screen-sm-max) {
@@ -243,6 +244,7 @@
 			width: 100px;
 			height: 100px;
 			border-radius: 10em;
+			border: 4px #DADADA solid;
 			&:hover{
 				span{
 					transform: scale(1.1) rotate(5deg);
@@ -269,10 +271,12 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 10em;
+			width: 92px;
+			height: 92px;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			top: 0;
+			display: block;
+			margin: 0 auto;
 			transform: scale(1);
 			transition: all 1s ease-out;
 		}
@@ -281,7 +285,7 @@
 			color: #303536;
 			font-family: 'ProximaNovaBold';
 			@media (max-width: $screen-sm-max) {
-				height: 80px;
+				height: 90px;
 				overflow: hidden;
 			}
 		}
@@ -289,9 +293,7 @@
 	&__item4{
 		display: inline-block;
 		width: 100px;
-		height: 100px;
-		border-radius: 10em;
-		border: 4px #DADADA solid;
+		overflow: hidden;
 		margin-top: 20px;
 		position: absolute;
 		right: -160px;
@@ -336,6 +338,7 @@
 			width: 100px;
 			height: 100px;
 			border-radius: 10em;
+			border: 4px #DADADA solid;
 			&:hover{
 				span{
 					transform: scale(1.1) rotate(5deg);
@@ -362,10 +365,12 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 10em;
+			width: 92px;
+			height: 92px;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			top: 0;
+			display: block;
+			margin: 0 auto;
 			transform: scale(1);
 			transition: all 1s ease-out;
 		}
@@ -374,7 +379,7 @@
 			color: #303536;
 			font-family: 'ProximaNovaBold';
 			@media (max-width: $screen-sm-max) {
-				height: 80px;
+				height: 90px;
 				overflow: hidden;
 			}
 		}
@@ -382,9 +387,7 @@
 	&__item5{
 		display: inline-block;
 		width: 100px;
-		height: 100px;
-		border-radius: 10em;
-		border: 4px #DADADA solid;
+		overflow: hidden;
 		margin-top: 20px;
 		position: absolute;
 		left: -150px;
@@ -430,6 +433,7 @@
 			width: 100px;
 			height: 100px;
 			border-radius: 10em;
+			border: 4px #DADADA solid;
 			&:hover{
 				span{
 					transform: scale(1.1) rotate(5deg);
@@ -456,10 +460,12 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 10em;
+			width: 92px;
+			height: 92px;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			top: 0;
+			display: block;
+			margin: 0 auto;
 			transform: scale(1);
 			transition: all 1s ease-out;
 		}
@@ -468,7 +474,7 @@
 			color: #303536;
 			font-family: 'ProximaNovaBold';
 			@media (max-width: $screen-sm-max) {
-				height: 80px;
+				height: 90px;
 				overflow: hidden;
 			}
 		}
@@ -477,9 +483,7 @@
 		margin-right: 50px;
 		display: inline-block;
 		width: 100px;
-		height: 100px;
-		border-radius: 10em;
-		border: 4px #DADADA solid;
+		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		@media (max-width: $screen-sm-max) {
@@ -520,6 +524,7 @@
 			width: 100px;
 			height: 100px;
 			border-radius: 10em;
+			border: 4px #DADADA solid;
 			&:hover{
 				span{
 					transform: scale(1.1) rotate(5deg);
@@ -546,10 +551,12 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 10em;
+			width: 92px;
+			height: 92px;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			top: 0;
+			display: block;
+			margin: 0 auto;
 			transform: scale(1);
 			transition: all 1s ease-out;
 		}
@@ -558,7 +565,7 @@
 			color: #303536;
 			font-family: 'ProximaNovaBold';
 			@media (max-width: $screen-sm-max) {
-				height: 80px;
+				height: 90px;
 				overflow: hidden;
 			}
 		}
@@ -566,9 +573,7 @@
 	&__item7{
 		display: inline-block;
 		width: 100px;
-		height: 100px;
-		border-radius: 10em;
-		border: 4px #DADADA solid;
+		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		&:before{
@@ -607,6 +612,7 @@
 			width: 100px;
 			height: 100px;
 			border-radius: 10em;
+			border: 4px #DADADA solid;
 			&:hover{
 				span{
 					transform: scale(1.1) rotate(5deg);
@@ -633,10 +639,12 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 10em;
+			width: 92px;
+			height: 92px;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			top: 0;
+			display: block;
+			margin: 0 auto;
 			transform: scale(1);
 			transition: all 1s ease-out;
 		}
@@ -645,7 +653,7 @@
 			color: #303536;
 			font-family: 'ProximaNovaBold';
 			@media (max-width: $screen-sm-max) {
-				height: 80px;
+				height: 90px;
 				overflow: hidden;
 			}
 		}
@@ -654,9 +662,7 @@
 		margin-right: 100px;
 		display: inline-block;
 		width: 100px;
-		height: 100px;
-		border-radius: 10em;
-		border: 4px #DADADA solid;
+		overflow: hidden;
 		margin-top: 20px;
 		position: relative;
 		@media (max-width: $screen-sm-max) {
@@ -698,6 +704,7 @@
 			width: 100px;
 			height: 100px;
 			border-radius: 10em;
+			border: 4px #DADADA solid;
 			&:hover{
 				span{
 					transform: scale(1.1) rotate(5deg);
@@ -724,10 +731,12 @@
 			background-repeat: no-repeat;
 			position: absolute;
 			border-radius: 10em;
+			width: 92px;
+			height: 92px;
 			left: 0;
 			right: 0;
-			bottom: 0;
-			top: 0;
+			display: block;
+			margin: 0 auto;
 			transform: scale(1);
 			transition: all 1s ease-out;
 		}
@@ -736,7 +745,7 @@
 			color: #303536;
 			font-family: 'ProximaNovaBold';
 			@media (max-width: $screen-sm-max) {
-				height: 80px;
+				height: 90px;
 				overflow: hidden;
 			}
 		}

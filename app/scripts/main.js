@@ -176,22 +176,11 @@ $(document).ready(function() {
 	});
 
 	$('.third').owlCarousel({
-		items: 2,
-		margin: 0,
+		items: 1,
 		loop: true,
 		dots: true,
 		nav: true,
 		navText:['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
-		responsive:{
-			0: {
-				items: 1,
-			},
-			768: {
-				items: 2,
-				margin: 15
-			},
-
-		}
 	});
 
 	$('.forth').owlCarousel({

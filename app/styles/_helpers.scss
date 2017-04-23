@@ -9,6 +9,16 @@
 }
 
 @font-face {
+  font-family: 'ProximaNovaXbld';
+  src: url('../fonts/ProximaNovaXbld/ProximaNovaExCn-XboldIt.eot'),
+  url('../fonts/ProximaNovaXbld/ProximaNovaExCn-XboldIt.woff') format('woff'),
+  url('../fonts/ProximaNovaXbld/ProximaNovaExCn-XboldIt.ttf') format('truetype'),
+  url('../fonts/ProximaNovaXbld/ProximaNovaExCn-XboldIt.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'ProximaNovaBoldIt';
   src: url('../fonts/ProximaNovaBoldIt/ProximaNova-BoldIt.eot'),
   url('../fonts/ProximaNovaBoldIt/ProximaNova-BoldIt.woff') format('woff'),

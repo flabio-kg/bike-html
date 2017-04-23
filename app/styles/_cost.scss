@@ -6,10 +6,13 @@
 		padding-right: 15px;
 		padding-bottom: 15px;
 		@media (max-width: $screen-sm-max) {
-			padding-top: 220px;
+			padding-top: 250px;
 		}
 		@media (max-width: $screen-xs-max) {
-			padding-top: 220px;
+			padding-top: 250px;
+		}
+		@media (max-width: $screen-xs-min) {
+			padding-top: 290px;
 		}
 	}
 	&__item{
