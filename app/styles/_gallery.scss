@@ -7,6 +7,7 @@
   }
   &__owl-wrap{
     padding-top: 50px;
+    z-index: 0;
   }
   &--item{
    img{
@@ -19,7 +20,7 @@
     color: #fff;
     font-size: 25px;
     position: absolute;
-    left: 20px;
+    left: 45px;
     top: 50%;
     margin-top: -20px;
     &:hover{
@@ -30,7 +31,7 @@
     color: #fff;
     font-size: 25px;
     position: absolute;
-    right: 20px;
+    right: 45px;
     top: 50%;
     margin-top: -20px;
     &:hover{

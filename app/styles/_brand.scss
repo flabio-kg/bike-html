@@ -23,10 +23,13 @@
       display: block;
     }
   }
+  .js-popup{
+
+  }
   &__blog{
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: 50px;    
+    margin-top: 50px;
     @media (max-width: $screen-xs-max){
       padding-left: 15px;
       padding-right: 15px;
@@ -38,6 +41,20 @@
   &__tabs{
     padding-top: 50px;
     position: relative;
+    .imgwrap{
+      margin-bottom: 50px;
+      top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+    .imgwraper{
+      margin-bottom: 39px;
+      top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
     ul{
       margin: 0;
       padding: 0;
@@ -45,40 +62,24 @@
       li{
         list-style-type: none;
         display: inline-block;
-        border: 1px solid #2590E3;
-        &:hover{
-          background-color: #2590E3;
+        background-color: #2590E3;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        padding: 15px 20px;
+        @media (max-width: $screen-xs-min){
+          padding: 5px 10px;
+          font-size: 13px;
         }
         &:first-child{
-          border-radius: 5px 0 0 5px;
+          border-radius: 5px;
         }
         &:last-child{
-          border-radius: 0 5px 5px 0;
-          margin-left: -5px;
-        }
-        a{
-          text-decoration: none;
-          color: #000;
-          font-size: 18px;
-          display: block;
-          padding: 15px 20px;
-          @media (max-width: $screen-xs-min){
-            padding: 5px 10px;
-            font-size: 13px;
-          }
-          &:hover{
-            color: #fff;
-          }
-        }
-      }
-      .active{
-        background-color: #2590E3;
-        a{
-          color:#fff;
-        }
+          border-radius: 5px;
+            }
       }
     }
-  }  
+  }
   .owl-item{
     width: auto;
     .active{
@@ -104,7 +105,9 @@
     }
   }
   &__item{
-    padding: 70px;
+    max-width: 300px;
+    width: 100%;
+    padding: 50px 20px;
     min-height: 350px;
     border: 1px solid #c1c1c1;
     display: inline-block;
@@ -112,6 +115,9 @@
       padding: 40px;
       margin-bottom: 30px;
     }
+    .item{
+  position: relative;
+      }
     img{
       max-width: 100%;
     }
@@ -121,6 +127,7 @@
       margin-bottom: 0;
       font-family: 'ProximaNovaBoldIt';
     }
+
     p{
       color: #ed145b;
       font-size: 24px;
@@ -145,7 +152,8 @@
         z-index: -1;
         left: 0;
         right: 0;
-      }     
+      }
     }
   }
+
 }

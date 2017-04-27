@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 	$('.js-phone').mask('+7 (999) 999-99-99');
-	
+
 
 	$('.popup-link').magnificPopup({
 		type:'inline',
@@ -70,15 +70,17 @@ $(document).ready(function() {
   		$('#map').html('');
   		myMap = new ymaps.Map('map', {
   			controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
-  			center: [53.714580,91.422524],
+  			// center: [53.714580,91.422524],
+  			center: [48.706413,44.463310],
   			behaviors: ['drag'],
   			zoom: 17
   		});
 
   		if (!data.type) {
-  			myPlacemark = new ymaps.Placemark([53.714280,91.422524], {
+  			myPlacemark = new ymaps.Placemark([48.706413,44.463310], {
   				balloonContentHeader: 'Freeway-bike.ru',
-  				balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
+  				balloonContentBody: 'Волгоград, ул. яблочная, 38а'
+
   			});
   			myMap.geoObjects.add(myPlacemark);
   			return true;
@@ -104,15 +106,15 @@ $(document).ready(function() {
 			$('#map').html('');
 			myMap = new ymaps.Map('map', {
 				controls: ['zoomControl', 'fullscreenControl', 'geolocationControl'],
-				center: [53.714380,91.420524],
+				center: [48.706413,44.460310],
 				behaviors: ['drag'],
 				zoom: 17
 			});
 
 			if (!data.type) {
-				myPlacemark = new ymaps.Placemark([53.714380,91.422524], {
+				myPlacemark = new ymaps.Placemark([48.706413,44.463310], {
 					balloonContentHeader: 'Freeway-bike.ru',
-					balloonContentBody: 'Москва ул. Пушкина дом. Колотушкина 53'
+					balloonContentBody: 'Волгоград, ул. яблочная, 38а'
 				});
 				myMap.geoObjects.add(myPlacemark);
 				return true;
@@ -167,6 +169,17 @@ $(document).ready(function() {
 	$('.second').owlCarousel({
 		items: 1,
 		loop:true,
+		lazyLoad:true,
+		dots: true,
+		nav: true,
+		center: true,
+		navText:['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
+
+	});
+
+	$('.sj-popup').owlCarousel({
+		items: 1,
+		loop:false,
 		lazyLoad:true,
 		dots: true,
 		nav: true,
@@ -264,10 +277,43 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$('.brand__tabs a').click(function() {
-		$(this).parent().siblings().removeClass('active');
-		$(this).parent().addClass('active');
-		$('.brand__visable.-hide').slideToggle();
-	});
+	// $('.brand__tabs a').click(function() {
+	// 	$(this).parent().siblings().removeClass('active');
+	// 	$(this).parent().addClass('active');
+	// 	$('.brand__visable.-hide').slideToggle();
+	// });
+
+
+	if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+
+
+$('.image-popup-zoom').magnificPopup({
+ type: 'image',
+ zoom: {
+     enabled: true,
+     duration: 300
+ }
+ });
+
 
 });
